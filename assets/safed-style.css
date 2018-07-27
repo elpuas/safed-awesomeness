@@ -1,0 +1,13 @@
+/* Plugin Awesomeness */
+
+:root {
+--primary-color: #254C88;
+--secondary-color: #0C2839;
+--orange-color: #F38131;
+--gray-color: #EFEFEF;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+}
