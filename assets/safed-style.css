@@ -17,9 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
     padding: 25px;
-    align-items: flex-end;
 }
 
 .safed__widget-horizontal .button_wrapper {
@@ -31,5 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .safed__widget-horizontal h3 {
-
+ color: white;
+ font-weight: 400;
+ text-align: center;
 }
