@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 function safed_styles() {
 
-  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/font.min.css', array(), get_the_time('U'));
+  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/fonts.min.css', array(), get_the_time('U'));
   wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/safed-style.css', array(), get_the_time('U'));
 
 }
