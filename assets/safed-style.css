@@ -11,3 +11,25 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
 }
+
+.safed__widget-horizontal {
+    background-image: url(/wp-content/uploads/2018/07/business_image.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 25px;
+    align-items: flex-end;
+}
+
+.safed__widget-horizontal .button_wrapper {
+    width: 100%;
+}
+
+.safed__widget-horizontal a.usa-button {
+    width: 49% !important;
+}
+
+.safed__widget-horizontal h3 {
+
+}
