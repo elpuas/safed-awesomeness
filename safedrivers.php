@@ -17,14 +17,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 function safed_enqueue_styles() {
 
-  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/font.min.css', array(), get_the_date('U'));
-  wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/safed-style.css', array(), get_the_date('U'));
+  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/font.min.css', array(), get_the_time('U'));
+  wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/safed-style.css', array(), get_the_time('U'));
 
 }
   add_action( 'wp_enqueue_styles', 'safed_enqueue_styles' );
 
   function safed_scripts() {
-    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . '/assets/safed-scripts.js', array( 'jquery' ), get_the_date('U'));
+    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . '/assets/safed-scripts.js', array( 'jquery' ), get_the_time('U'));
   }
 
   add_action( 'wp_enqueue_scripts', 'safed_scripts' );
