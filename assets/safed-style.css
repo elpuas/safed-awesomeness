@@ -196,13 +196,18 @@ footer:not(.entry-footer) {
     min-height: 150px;
 }
 
-section.usa-hero.usa-hero--medium h1 {
-    color: white;
+section.usa-hero.usa-hero--medium h1, section.usa-hero.usa-hero--slim h2 {
+    color: white !important;
 }
 
 .page-about-us section.usa-hero.usa-hero--medium {
-    background-image: url();
+    background-image: url(http://18.217.227.207/wp-content/uploads/2018/07/EpilepsyDrivingNYC_night_high_speed_car_driving-hd.jpg);
 }
+
+.page-driving-record-information section.usa-hero.usa-hero--medium {
+    background-image: url(http://18.217.227.207/wp-content/uploads/2018/07/EpilepsyDrivingNYC_night_high_speed_car_driving-hd.jpg);
+}
+
 
 
 
