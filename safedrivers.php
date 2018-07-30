@@ -18,7 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function safed_styles() {
 
   wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/fonts.min.css', array(), get_the_time('U'));
-  wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/safed-style.css', array(), get_the_time('U'));
 
 }
   add_action( 'wp_enqueue_scripts', 'safed_styles' );
@@ -29,6 +28,10 @@ function safed_styles() {
 
   add_action( 'wp_enqueue_scripts', 'safed_scripts' );
 
+  function prefix_add_footer_styles() {
+    wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/safed-style.css', array(), get_the_time('U'));
+};
+add_action( 'get_footer', 'prefix_add_footer_styles' );  
 
   /**
   * Add SVG Support
