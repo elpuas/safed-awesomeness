@@ -17,21 +17,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 function safed_styles() {
 
-  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . '/fonts/fonts.min.css', array(), get_the_time('U'));
-  wp_enqueue_style( 'safed-icons', plugin_dir_url( __FILE__ ) . '/assets/css/all.min.css', array(), get_the_time('U'));
+  wp_enqueue_style( 'safed-fonts', plugin_dir_url( __FILE__ ) . 'fonts/fonts.min.css', array(), get_the_time('U'));
+  wp_enqueue_style( 'safed-icons', plugin_dir_url( __FILE__ ) . 'assets/css/all.min.css', array(), get_the_time('U'));
 
 }
   add_action( 'wp_enqueue_scripts', 'safed_styles' );
 
   function safed_scripts() {
-    wp_enqueue_script( 'safed-icons-script', plugin_dir_url( __FILE__ ) . '/assets/js/all.min.js', array( ), get_the_time('U'));
-    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . '/assets/js/safed-scripts.js', array( 'jquery' ), get_the_time('U'));
+    wp_enqueue_script( 'safed-icons-script', plugin_dir_url( __FILE__ ) . 'assets/js/all.min.js', array( ), get_the_time('U'));
+    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . 'assets/js/safed-scripts.js', array( 'jquery' ), get_the_time('U'));
   }
 
   add_action( 'wp_enqueue_scripts', 'safed_scripts' );
 
   function prefix_add_footer_styles() {
-    wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . '/assets/css/safed-style.css', array(), get_the_time('U'));
+    wp_enqueue_style( 'safed-styles', plugin_dir_url( __FILE__ ) . 'assets/css/safed-style.css', array(), get_the_time('U'));
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );  
 
