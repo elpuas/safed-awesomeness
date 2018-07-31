@@ -25,7 +25,7 @@ function safed_styles() {
 
   function safed_scripts() {
     wp_enqueue_script( 'safed-icons-script', plugin_dir_url( __FILE__ ) . '/assets/js/all.min.js', array( ), get_the_time('U'));
-    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . '/assets/safed-scripts.js', array( 'jquery' ), get_the_time('U'));
+    wp_enqueue_script( 'safed-script', plugin_dir_url( __FILE__ ) . '/assets/js/safed-scripts.js', array( 'jquery' ), get_the_time('U'));
   }
 
   add_action( 'wp_enqueue_scripts', 'safed_scripts' );
