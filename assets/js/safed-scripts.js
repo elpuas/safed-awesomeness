@@ -11,14 +11,14 @@ jQuery(document).ready(function($){
         return this;
     };
 
-    $('.page-business-driving-records-online .button_wrapper').exists(function(){
+    $('.page-business-driving-records-online .button_wrapper').exists( function() {
+
         this.appendTo('.page-business-driving-records-online section .usa-grid');
     })
 
-    $('.single-post .entry-content .button-wrapper').exists( function(){
-        console.log(this);
-        this.appendTo('.single-post section.usa-hero .usa-grid');
+    $('.entry-content .button_wrapper').exists( function() {
 
+        this.appendTo('section.usa-hero .usa-grid');
     })
 
     console.log("%c Made with  💖 and a lot of  ☕ by el.puas | https://elpuas.com ", "color:#fff;background:gold;");
