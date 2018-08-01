@@ -15,5 +15,10 @@ jQuery(document).ready(function($){
         this.appendTo('.page-business-driving-records-online section .usa-grid');
     })
 
+    $('.single-post .button-wrapper').exists( function(){
+        this.appendTo('.single-post section .usa-grid');
+
+    });
+
     console.log("%c Made with  💖 and a lot of  ☕ by el.puas | https://elpuas.com ", "color:#fff;background:gold;");
 });
