@@ -17,9 +17,9 @@ jQuery(document).ready(function($){
 
     $('.single-post .entry-content .button-wrapper').exists( function(){
         console.log(this);
-        this.appendTo('.single-post section.usa-hero');
+        this.appendTo('.single-post section.usa-hero .usa-grid');
 
-    });
+    })
 
     console.log("%c Made with  💖 and a lot of  ☕ by el.puas | https://elpuas.com ", "color:#fff;background:gold;");
 });
